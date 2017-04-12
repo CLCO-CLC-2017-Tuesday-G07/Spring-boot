@@ -35,6 +35,8 @@ public class FileUploadController {
     
     @Autowired
     WebInfoService webInfoService;
+    
+    SlideService slideService;
   
 
  
@@ -50,11 +52,12 @@ public class FileUploadController {
     
         return "jsp/home";
     }
-    @RequestMapping("/edit")
+    @RequestMapping("/slidebar")
     public String edit(Model model) throws IOException
     {
-    	List<webInfo> webpages=webInfoService.findAllWebPages();
-    	model.addAttribute("webpages",webpages);
+    	
+    	List<SlideBar> slideBarList = slideService.findAllWebPages();
+    	model.addAttribute("slidebar", slideBarList);
         return "jsp/admin";
     }
     @RequestMapping("/admin")
@@ -62,6 +65,8 @@ public class FileUploadController {
     {
     	List<webInfo> webpages=webInfoService.findAllWebPages();
     	model.addAttribute("webpages",webpages);
+//    	List<SlideBar> slideBarList = slideService.findAllWebPages();
+//    	model.addAttribute("slidebar", slideBarList);
         return "jsp/example";
     }
     
@@ -182,11 +187,6 @@ public class FileUploadController {
 		
 		return "redirect:/";
 	}
-    
-    
-    
-    
-    
 
     @GetMapping("/files/{filename:.+}")
     @ResponseBody

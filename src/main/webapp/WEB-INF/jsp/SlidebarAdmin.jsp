@@ -23,30 +23,7 @@
 <table class="table table-hover">
 					<tr>
 						<th>Id</th>
-						<th>URL</th>
-						<th>Options</th>
-					<c:forEach items="${slidebar}" var="slide">
-					
-				<tbody>
-							<td>${slide.page_id}</td>
-							
-							<td>${slide.urlHinh}</td>
-					
-							<td><a href="<c:url value='/delete-page-${web.page_id}' />"
-							class="btn btn-danger custom-width">delete</a><a href="<c:url value='/edit-webpage-${web.page_id }' />"
-							class="btn btn-info custom-width"> edit </a></td>
-							
-						</tr>
-					</c:forEach>
-					<td><a href="<c:url value='/new-webpage' />"
-							class="btn btn-primary custom-width">new </a></td>
-		    		</tbody>
-				</table>
-				
-<!--  				<table class="table table-hover">
-					<tr>
-						<th>Id</th>
-						<th>URL</th>
+						<th>Description</th>
 						<th>Options</th>
 					<c:forEach items="${webpages}" var="web">
 					
@@ -65,7 +42,6 @@
 							class="btn btn-primary custom-width">new </a></td>
 		    		</tbody>
 				</table>
-				 --> 
 		    	</div>
            </jsp:body>
 </t:templetepage>

@@ -461,7 +461,7 @@
 													href="<c:url value="/contact"/>" class="rmLink rmRootLink"><span
 														class="rmText">Contact</span></a></li>
 														<li class="rmItem rmLast"><a
-													href="<c:url value="/new-webpage"/>" class="rmLink rmRootLink"><span
+													href="<c:url value="/admin"/>" class="rmLink rmRootLink"><span
 														class="rmText">Edit</span></a></li>
 												
 											</ul>
