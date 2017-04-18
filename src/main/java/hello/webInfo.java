@@ -23,7 +23,8 @@ public class webInfo {
 
 	@Column(name="content", unique=true, nullable=false)
 	private String content;
-
+	 @OneToMany(mappedBy = "news", cascade = CascadeType.ALL)
+	    private Set<UserDocument> userDocuments = new HashSet<UserDocument>();
 
 	public Integer getPage_id() {
 		return page_id;

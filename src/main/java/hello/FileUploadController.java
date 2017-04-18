@@ -3,6 +3,8 @@ package hello;
 import hello.search.FileSearchService;
 import hello.storage.StorageFileNotFoundException;
 import hello.storage.StorageService;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -187,6 +189,20 @@ public class FileUploadController {
 		
 		return "redirect:/";
 	}
+	@RequestMapping(value = { "/edit" }, method = RequestMethod.GET)
+	public String newfile(ModelMap model) {
+		webInfo webInfo = new webInfo();
+		model.addAttribute("webInfo", webInfo);
+		return "jsp/regist";
+	}
+	
+	@RequestMapping(value = { "/edit" }, method = RequestMethod.POST)
+	public String upload(@Valid webInfo webInfo, BindingResult result,
+			ModelMap model) 
+	{
+		webInfoService.saveWebpage(webInfo);
+		return "redirect:/";
+	}
 
     @GetMapping("/files/{filename:.+}")
     @ResponseBody
@@ -220,5 +236,12 @@ public class FileUploadController {
     public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {
         return ResponseEntity.notFound().build();
     }
+    
+    @RequestMapping(value = { "/upfile-webpage-{pageID}" }, method = RequestMethod.GET)
+	public String upload(@PathVariable String pageID, ModelMap model) {
+		
+	
+		return "jsp/uploadnews";
+	}
 
 }

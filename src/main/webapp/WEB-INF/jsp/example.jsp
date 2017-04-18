@@ -33,8 +33,13 @@
 							<td>${web.description}</td>
 					
 							<td><a href="<c:url value='/delete-page-${web.page_id}' />"
-							class="btn btn-danger custom-width">delete</a><a href="<c:url value='/edit-webpage-${web.page_id }' />"
-							class="btn btn-info custom-width"> edit </a></td>
+							class="btn btn-danger custom-width">delete</a>
+							<a href="<c:url value='/edit-webpage-${web.page_id }' />"
+							class="btn btn-info custom-width"> edit </a>
+							<a href="<c:url value='/upfile-webpage-${web.page_id }' />"
+							class="btn btn-success custom-width"> upfile </a>
+							</td>
+							
 							
 						</tr>
 					</c:forEach>
