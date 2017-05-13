@@ -19,7 +19,8 @@
 	<jsp:attribute name="footer">
     </jsp:attribute>
 	<jsp:body>
-<div>
+
+
 <table class="table table-hover">
 					<tr>
 						<th>Id</th>
@@ -33,11 +34,11 @@
 							<td>${web.description}</td>
 					
 							<td><a href="<c:url value='/delete-page-${web.page_id}' />"
-							class="btn btn-danger custom-width">delete</a>
+							class="btn btn-danger custom-width"><span class="glyphicon glyphicon-trash"></span></a>
 							<a href="<c:url value='/edit-webpage-${web.page_id }' />"
-							class="btn btn-info custom-width"> edit </a>
+							class="btn btn-info custom-width"><span class="glyphicon glyphicon-pencil"></a>
 							<a href="<c:url value='/upfile-webpage-${web.page_id }' />"
-							class="btn btn-success custom-width"> upfile </a>
+							class="btn btn-success custom-width"><span class="glyphicon glyphicon-upload"></a>
 							</td>
 							
 							
@@ -47,30 +48,6 @@
 							class="btn btn-primary custom-width">new </a></td>
 		    		</tbody>
 				</table>
-				
-<!--  				<table class="table table-hover">
-					<tr>
-						<th>Id</th>
-						<th>URL</th>
-						<th>Options</th>
-					<c:forEach items="${webpages}" var="web">
-					
-				<tbody>
-							<td>${web.page_id}</td>
-							
-							<td>${web.description}</td>
-					
-							<td><a href="<c:url value='/delete-page-${web.page_id}' />"
-							class="btn btn-danger custom-width">delete</a><a href="<c:url value='/edit-webpage-${web.page_id }' />"
-							class="btn btn-info custom-width"> edit </a></td>
-							
-						</tr>
-					</c:forEach>
-					<td><a href="<c:url value='/new-webpage' />"
-							class="btn btn-primary custom-width">new </a></td>
-		    		</tbody>
-				</table>
-				 --> 
-		    	</div>
+		    
            </jsp:body>
 </t:templetepage>

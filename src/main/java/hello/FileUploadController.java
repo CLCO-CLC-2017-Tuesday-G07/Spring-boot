@@ -51,8 +51,11 @@ public class FileUploadController {
     @RequestMapping("/")
     public String listUploadedFiles(Model model) throws IOException
     {
-    
-        return "jsp/home";
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
+    	webInfo home=webInfoService.findById(19);
+    	model.addAttribute("home",home);
+        return "jsp/Default71a5";
     }
     @RequestMapping("/slidebar")
     public String edit(Model model) throws IOException
@@ -67,8 +70,8 @@ public class FileUploadController {
     {
     	List<webInfo> webpages=webInfoService.findAllWebPages();
     	model.addAttribute("webpages",webpages);
-//    	List<SlideBar> slideBarList = slideService.findAllWebPages();
-//    	model.addAttribute("slidebar", slideBarList);
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
         return "jsp/example";
     }
     
@@ -79,6 +82,8 @@ public class FileUploadController {
     
     	webInfo callpaper=webInfoService.findById(10);
     	model.addAttribute("callpaper",callpaper);
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/Default789b";
     }
     
@@ -86,6 +91,8 @@ public class FileUploadController {
     public String submission(Model model){
     	webInfo submission=webInfoService.findById(15);
     	model.addAttribute("submission",submission);
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/Defaultd478";
     	
     	
@@ -97,6 +104,8 @@ public class FileUploadController {
     	
     	webInfo registration=webInfoService.findById(16);
     	model.addAttribute("registration",registration);
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/Defaulta8ef";	
     }
     
@@ -104,6 +113,8 @@ public class FileUploadController {
     public String keynotespeaker(Model model){
     	webInfo keynotespeaker=webInfoService.findById(17);
     	model.addAttribute("keynotespeaker",keynotespeaker);
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/Default6b73";	
     }
     
@@ -111,35 +122,54 @@ public class FileUploadController {
     public String contact(Model model){
     	webInfo contact=webInfoService.findById(20);
     	model.addAttribute("contact",contact);
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
+		return "jsp/Default84ba";	
+    }
+    @RequestMapping(value = { "/slidebar" }, method = RequestMethod.GET)
+    public String sliderBar(Model model){
+    	webInfo contact=webInfoService.findById(21);
+    	model.addAttribute("slidebar",contact);
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/Default84ba";	
     }
     
     @RequestMapping(value = { "/home_page" }, method = RequestMethod.GET)
     public String homepage(Model model){
-    	
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/Default71a5.jsp?PageId=8cb7e0c5-10f3-438b-8881-a74c24b373e3";	
     }
     @RequestMapping(value = { "/venuehotel" }, method = RequestMethod.GET)
     public String hotelmapping(Model model){
     	webInfo venuehotel=webInfoService.findById(18);
     	model.addAttribute("venuehotel",venuehotel);
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/Venue_Hotel";	
     }
     
     @RequestMapping(value = { "/latestnewsFirst" }, method = RequestMethod.GET)
     public String latestnewsFirst(Model model){
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/index52be.jsp?ArticleId=3af2fa01-2645-4516-a65a-67bfec768e13";	
     }
     
     
     @RequestMapping(value = { "/latestnewsSecond" }, method = RequestMethod.GET)
     public String latestnewsSecond(Model model){
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/indexe41c.jsp?ArticleId=bc474489-26ce-4997-a1c0-b37dce27b202";	
     }
     
     
     @RequestMapping(value = { "/latestnewsThird" }, method = RequestMethod.GET)
     public String latestnewsThird(Model model){
+    	webInfo slideBarList=webInfoService.findById(21);
+    	model.addAttribute("slidebar", slideBarList);
 		return "jsp/indexc489.jsp?ArticleId=f796f938-0681-4d25-b47e-6bcd24536152";	
     }
     

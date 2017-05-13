@@ -7,7 +7,7 @@
 	<title>Icsse7 News</title>
 	<link href="/resources/CSS/bootstrap.css" rel="stylesheet"></link>
 	<link href="/resources/CSS/app.css" rel="stylesheet"></link>
-	<script src="/resources/ckeditor/ckeditor.js"></script>
+	<script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 	<script type="text/javascript">
 		var openFile = function(event) {
 			if (CKEDITOR.instances['body']) {
@@ -25,8 +25,17 @@
 		    CKEDITOR.replace('body');
 	  	};
 	</script>	
+	<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body>
+<center>
 <div class="panel panel-default">
 			
 			<div class="panel-heading"><span class="lead">Upload News</span></div>
@@ -67,5 +76,6 @@
 		</div>
 	 	
    	</div>
+   	</center>
 </body>
 </html>

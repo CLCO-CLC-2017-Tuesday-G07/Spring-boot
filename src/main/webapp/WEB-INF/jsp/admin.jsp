@@ -39,7 +39,10 @@
 						</tr>
 					</c:forEach>
 					<td><a href="<c:url value='/new-webpage' />"
+							class="btn btn-primary custom-width">new </a>
+							<a href="<c:url value='/new-webpage' />"
 							class="btn btn-primary custom-width">new </a></td>
+							<td></td>
 		    		</tbody>
 				</table>
 				
