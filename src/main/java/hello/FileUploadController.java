@@ -37,9 +37,6 @@ public class FileUploadController {
     
     @Autowired
     WebInfoService webInfoService;
-    
-    SlideService slideService;
-  
 
  
     @Autowired
@@ -55,15 +52,7 @@ public class FileUploadController {
     	model.addAttribute("slidebar", slideBarList);
     	webInfo home=webInfoService.findById(19);
     	model.addAttribute("home",home);
-        return "jsp/Default71a5";
-    }
-    @RequestMapping("/slidebar")
-    public String edit(Model model) throws IOException
-    {
-    	
-    	List<SlideBar> slideBarList = slideService.findAllWebPages();
-    	model.addAttribute("slidebar", slideBarList);
-        return "jsp/admin";
+        return "jsp/home";
     }
     @RequestMapping("/admin")
     public String admin(Model model) throws IOException
@@ -234,16 +223,7 @@ public class FileUploadController {
 		return "redirect:/";
 	}
 
-    @GetMapping("/files/{filename:.+}")
-    @ResponseBody
-    public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
-
-        Resource file = storageService.loadAsResource(filename);
-        return ResponseEntity
-                .ok()
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\""+file.getFilename()+"\"")
-                .body(file);
-    }
+  
 
     @PostMapping("/")
     public String handleFileUpload(@RequestParam("file") MultipartFile file,
@@ -254,17 +234,6 @@ public class FileUploadController {
                 "You successfully uploaded " + file.getOriginalFilename() + "!");
 
         return "redirect:/";
-    }
-    
-    @GetMapping("/search")
-    public String searchFiles(@RequestParam("fileName") String name, Model model) throws IOException {
-    	model.addAttribute("result",fileSearchService.searchFile(name));
-        return "uploadForm";
-    }
-    
-    @ExceptionHandler(StorageFileNotFoundException.class)
-    public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {
-        return ResponseEntity.notFound().build();
     }
     
     @RequestMapping(value = { "/upfile-webpage-{pageID}" }, method = RequestMethod.GET)

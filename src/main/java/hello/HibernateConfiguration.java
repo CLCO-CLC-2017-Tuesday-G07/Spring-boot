@@ -1,4 +1,5 @@
 package hello;
+
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -14,13 +15,16 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+
 @Configuration
 @EnableTransactionManagement
 @ComponentScan({ "hello" })
-@PropertySource(value = { "classpath:application.properties" })
+@PropertySource(value = { "hello" })
 public class HibernateConfiguration {
+
     @Autowired
     private Environment environment;
+
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
@@ -29,8 +33,7 @@ public class HibernateConfiguration {
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
      }
-    
-    
+	
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -57,3 +60,4 @@ public class HibernateConfiguration {
        return txManager;
     }
 }
+
