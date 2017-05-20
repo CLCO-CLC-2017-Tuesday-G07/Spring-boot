@@ -3,38 +3,27 @@
 <%@tag description="Overall Page template" pageEncoding="UTF-8"%>
 <%@attribute name="header" fragment="true"%>
 <%@attribute name="footer" fragment="true"%>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<body>
 <head>
 <title>WELCOME TO ICSSE 2017</title>
 
-<link href="<c:url value="/resources/css/show_img.css"/>"
-	rel="stylesheet" type="text/css" />
+<link href="<c:url value="css/show_img.css"/>" rel="stylesheet"
+	type="text/css" />
 
 <script type="text/javascript"
-	src="<c:url value="/resources/Portlets/PanelBar/js/jquery-1.7.2.min.js"/>"></script>
-<script src="<c:url value="/resources/js/Common.js" />"
+	src="<c:url value="Portlets/PanelBar/js/jquery-1.7.2.min.js"/>"></script>
+<script src="<c:url value="js/Common.js" />" type="text/javascript"></script>
+<script src="<c:url value="js/PagingContent.js" />"
 	type="text/javascript"></script>
-<script src="<c:url value="/resources/js/PagingContent.js" />"
-	type="text/javascript"></script>
-<link rel="shortcut icon" type="/resources/image/png"
-	href="<c:url value="/resources/Resources/Imagephoto/logo.png"/>" />
-<link
-	href="<c:url value="/resources/component/lightbox/css/lightbox.css"/>"
+<link rel="shortcut icon" type="image/png"
+	href="<c:url value="Resources/Imagephoto/logo.png"/>" />
+<link href="<c:url value="component/lightbox/css/lightbox.css"/>"
 	rel="stylesheet" type="text/css" />
-<script
-	src="<c:url value="/resources/component/lightbox/js/lightbox.min.js"/>"
+<script src="<c:url value="component/lightbox/js/lightbox.min.js"/>"
 	type="text/javascript"></script>
-<link href="<c:url value="/resources/css/search_Article.css"/>"
-	rel="stylesheet" />
+<link href="<c:url value="css/search_Article.css"/>" rel="stylesheet" />
 <script language="javascript" type="text/javascript">
 	function SearchProcess(event) {
 		if (event.keyCode == 13) {
@@ -120,20 +109,20 @@
 
 
 <link
-	href="<c:url value = "/resources/css/WebResource35b9.css"/>?d=QGz0EVx6KnXd0XFNz6_h8xNXGaTBbw0tdFlEudQ7cm-OthWnn6Dm_5tU0MRnaGIhZBbRg9S7WqTpHMZa1xNtEI0ab6Kl1IPnRi5TjbKoJFbytbX9TFl44EGYy--GyfelKV3DXQ2&amp;t=636040235083572431"
+	href="<c:url value = "css/WebResource35b9.css"/>?d=QGz0EVx6KnXd0XFNz6_h8xNXGaTBbw0tdFlEudQ7cm-OthWnn6Dm_5tU0MRnaGIhZBbRg9S7WqTpHMZa1xNtEI0ab6Kl1IPnRi5TjbKoJFbytbX9TFl44EGYy--GyfelKV3DXQ2&amp;t=636040235083572431"
 	type="text/css" rel="stylesheet" class="Telerik_stylesheet" />
 
-<link
-	href="<c:url value = "/resources/css/WebResourceb3b4.css"/>?d=x4growm4tE1xfqgq7CUmVsUnI-CbXa2N-c2_fNRwnEpvDP0BV-wXVIwtg-UArpbb2CDL-uqyWHg0pIMI2IqW_DG9HsBwwwsOkPeV5QgKyY9Yh5O4O982ECGyV1iNUPf_9TfsdN6N5kUDZgz-JeRM7Yx1qwU1&amp;t=636040235083572431"
+	<link
+	href="<c:url value = "css/WebResourceb3b4.css"/>?d=x4growm4tE1xfqgq7CUmVsUnI-CbXa2N-c2_fNRwnEpvDP0BV-wXVIwtg-UArpbb2CDL-uqyWHg0pIMI2IqW_DG9HsBwwwsOkPeV5QgKyY9Yh5O4O982ECGyV1iNUPf_9TfsdN6N5kUDZgz-JeRM7Yx1qwU1&amp;t=636040235083572431"
 	type="text/css" rel="stylesheet" class="Telerik_stylesheet" />
 <link
-	href="<c:url value="/resources/css/WebResourcee0ee.css"/>?d=ytD-yNU6w7OB5aQbpzdcKJJ4smWyZMrK26w2o8npDQvDJ2icAgnw46NhWNMATnygLURPdF6r1twj4HqvCpovy2cbE23Jpa5bO0SD9RAs5_bYKKb1dSU8kaK__zLNU1OzkJIV0Q2&amp;t=636040235083572431"
+	href="<c:url value="css/WebResourcee0ee.css"/>?d=ytD-yNU6w7OB5aQbpzdcKJJ4smWyZMrK26w2o8npDQvDJ2icAgnw46NhWNMATnygLURPdF6r1twj4HqvCpovy2cbE23Jpa5bO0SD9RAs5_bYKKb1dSU8kaK__zLNU1OzkJIV0Q2&amp;t=636040235083572431"
 	type="text/css" rel="stylesheet" class="Telerik_stylesheet" />
 </head>
 <body class="body" onload='popunder();'>
 
 	<!-- header -->
-	<jsp:invoke fragment="header" />
+	<!--<jsp:invoke fragment="header" />-->
 	<form name="form1" method="post" action="#" id="form1">
 		<div>
 			<input type="hidden" name="RadScriptManager1_TSM"
@@ -162,7 +151,7 @@
 
 
 		<script
-			src="<c:url value="/resources/js/WebResource9300.js"/>?d=m-BGqXLvdmxbkGKJ0cdC31IEEQSwl8M48qzhTdLsvA4cQATMbLAUn5HThStArYaMS9SVdQ3Idd2S2XYrPm7fUFdO8YM1&amp;t=635328605200000000"
+			src="<c:url value="js/WebResource9300.js"/>?d=m-BGqXLvdmxbkGKJ0cdC31IEEQSwl8M48qzhTdLsvA4cQATMbLAUn5HThStArYaMS9SVdQ3Idd2S2XYrPm7fUFdO8YM1&amp;t=635328605200000000"
 			type="text/javascript"></script>
 
 
@@ -170,8 +159,7 @@
 
 
 
-		<script
-			src="<c:url value="/resources/js/Telerik.Web.UI.WebResource82d2.js"/>"
+		<script src="<c:url value="js/Telerik.Web.UI.WebResource82d2.js"/>"
 			type="text/javascript"></script>
 		<script type="text/javascript">
 			//<![CDATA[
@@ -181,17 +169,14 @@
 			//]]>
 		</script>
 
-		<script
-			src="<c:url value ="/resources/Services/PortletProxy.asmx/jsdebug.js"/>"
+		<script src="<c:url value ="Services/PortletProxy.asmx/jsdebug.js"/>"
+			type="text/javascript"></script>
+		<script src="<c:url value = "Services/ModuleProxy.asmx/jsdebug.js"/>"
+			type="text/javascript"></script>
+		<script src="<c:url value = "Services/CMS.asmx/jsdebug.js"/>"
 			type="text/javascript"></script>
 		<script
-			src="<c:url value = "/resources/Services/ModuleProxy.asmx/jsdebug.js"/>"
-			type="text/javascript"></script>
-		<script
-			src="<c:url value = "/resources/Services/CMS.asmx/jsdebug.js"/>"
-			type="text/javascript"></script>
-		<script
-			src="<c:url value = "/resources/Services/WeatherService.asmx/jsdebug.js"/>"
+			src="<c:url value = "Services/WeatherService.asmx/jsdebug.js"/>"
 			type="text/javascript"></script>
 		<div>
 
@@ -280,10 +265,9 @@
 
 
 		<link
-			href="<c:url value = "/resources/Resources/ImagesPortal/PhongBan/main.css"/>"
+			href="<c:url value = "Resources/ImagesPortal/PhongBan/main.css"/>"
 			rel="stylesheet" />
-		<link href="<c:url value = "/resources/css/mainPortlets.css"/>"
-			rel="stylesheet" />
+		<link href="<c:url value = "css/mainPortlets.css"/>" rel="stylesheet" />
 		<script language="javascript" type="text/javascript">
 			function SearchProcess(event) {
 				if (event.keyCode == 13) {
@@ -319,7 +303,7 @@
 											<div class="P_logo">
 												<div class="anh_logo">
 													<img alt=""
-														src="<c:url value = "/resources/Resources/Images/SubDomain/icsse2017/Banner%20Hoi%20nghi%20quoc%20te%20sua.jpg"/>"
+														src="<c:url value = "Resources/Images/SubDomain/icsse2017/Banner%20Hoi%20nghi%20quoc%20te%20sua.jpg"/>"
 														style="width: 800px; height: 188px;" /><br />
 												</div>
 												<div class="name_ute"></div>
@@ -349,14 +333,14 @@
 									<div>
 
 										<link
-											href="<c:url value = "/resources/Portlets/NivoSlider/CSS/nivo-slider.css"/>"
+											href="<c:url value = "Portlets/NivoSlider/CSS/nivo-slider.css"/>"
 											rel="stylesheet" />
 										<link
-											href="<c:url value = "/resources/Portlets/NivoSlider/CSS/themes/default/default.css"/>"
+											href="<c:url value = "Portlets/NivoSlider/CSS/themes/default/default.css"/>"
 											rel="stylesheet" />
 
 										<script
-											src="<c:url value = "/resources/Portlets/NivoSlider/Scripts/jquery.nivo.slider.js"/>"></script>
+											src="<c:url value = "Portlets/NivoSlider/Scripts/jquery.nivo.slider.js"/>"></script>
 
 
 
@@ -366,11 +350,11 @@
 												<div id="slider" class="nivoSlider">
 
 													<a href="#" target="_blank"> <img
-														src="<c:url value = "/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT3.jpg"/>"
+														src="<c:url value = "Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT3.jpg"/>"
 														title="" /></a> <a href="#" target="_blank"> <img
-														src="<c:url value = "/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT2.jpg"/>"
+														src="<c:url value = "Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT2.jpg"/>"
 														title="" /></a> <a href="#" target="_blank"> <img
-														src="<c:url value = "/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT1.jpg"/>"
+														src="<c:url value = "Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT1.jpg"/>"
 														title="" /></a>
 
 												</div>
@@ -427,7 +411,7 @@
 									<div>
 
 										<link
-											href="<c:url value = "/resources/Portlets/MenuRad/Menu.Green.css"/>"
+											href="<c:url value = "Portlets/MenuRad/Menu.Green.css"/>"
 											rel="stylesheet" type="text/css" />
 										<div
 											id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu"
@@ -467,8 +451,9 @@
 													href="<c:url value="/keynotespeaker" />"
 													class="rmLink rmRootLink"><span class="rmText">Keynote
 															Speakers</span></a></li>
-												<li class="rmItem "><a class="rmLink rmRootLink"><span
-														class="rmText">Program</span></a></li>
+												<li class="rmItem "><a
+													
+													class="rmLink rmRootLink"><span class="rmText">Program</span></a></li>
 												<li class="rmItem "><a
 													href="<c:url value="/venuehotel"/>"
 													class="rmLink rmRootLink"><span class="rmText">Venue
@@ -476,10 +461,10 @@
 												<li class="rmItem rmLast"><a
 													href="<c:url value="/contact"/>" class="rmLink rmRootLink"><span
 														class="rmText">Contact</span></a></li>
-												<li class="rmItem rmLast"><a
+														<li class="rmItem rmLast"><a
 													href="<c:url value="/admin"/>" class="rmLink rmRootLink"><span
 														class="rmText">Edit</span></a></li>
-
+												
 											</ul>
 											<input
 												id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState"
@@ -493,45 +478,35 @@
 						</div></td>
 
 				</tr>
+	</div>
+<!-- *******************HEADER************************ -->
 
+<!-- *******************BODY************************ -->
+	<div id="body">
 				<tr valign="top">
+				<td >
+	<!-- *******************LEFTBODY************************ -->
+			    <div id="leftbody">
+			      <jsp:doBody/>
+				</div>
+	<!-- *******************LEFTBODY************************ -->
+				</td>
+	<!-- *******************SIDEBAR************************ -->
+				<div id="sidebar" name="sidebar">
+								
+								<td><div id="pnRight">
+									<div id="pnRightDisplay" style="padding:0px 0px 0px 6px;width:300px;float:right">
+										 ${slidebar.content}
+									</div>
+								</div>
+								</td>
+							</tr>
+				</div>
+		<!-- *******************SIDEBAR************************ -->
+	</div>
+<!-- *******************BODY************************ -->
 
-					<td><div id="pnCenter">
-							<div id="pnCenterDisplay" style="width: 692px; float: left">
-
-								<jsp:doBody />
-
-							</div>
-
-
-						</div></td>
-
-					</td>
-
-					<td>
-						<div id="pnRight">
-							<!-- Comment -->
-							<div id="pnRightDisplay" style="float:left; padding:0px 0px 0px 6px; width:300px">
-							 ${slidebar.content}
-							 </div>
-						</div>
-					</td>
-
-				</tr>
-
-
-
-
-
-
-
-				<!-- end of header -->
-				<!-- body -->
-
-
-
-				<!-- end of body -->
-				<!-- footer -->
+<!-- footer -->
 				<jsp:invoke fragment="footer" />
 				<tr>
 					<td colspan="2"><div id="pnBottom">
@@ -652,6 +627,8 @@
 			//]]>
 		</script>
 	</form>
+		</body>
+	</div>
 	<!-- end of footer -->
 </body>
 </html>
