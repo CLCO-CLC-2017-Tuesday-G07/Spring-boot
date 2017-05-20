@@ -16,21 +16,25 @@
 <head>
 <title>WELCOME TO ICSSE 2017</title>
 
-<link href="<c:url value="/resources/css/show_img.css"/>" rel="stylesheet"
-	type="text/css" />
+<link href="<c:url value="/resources/css/show_img.css"/>"
+	rel="stylesheet" type="text/css" />
 
 <script type="text/javascript"
 	src="<c:url value="/resources/Portlets/PanelBar/js/jquery-1.7.2.min.js"/>"></script>
-<script src="<c:url value="/resources/js/Common.js" />" type="text/javascript"></script>
+<script src="<c:url value="/resources/js/Common.js" />"
+	type="text/javascript"></script>
 <script src="<c:url value="/resources/js/PagingContent.js" />"
 	type="text/javascript"></script>
 <link rel="shortcut icon" type="/resources/image/png"
 	href="<c:url value="/resources/Resources/Imagephoto/logo.png"/>" />
-<link href="<c:url value="/resources/component/lightbox/css/lightbox.css"/>"
+<link
+	href="<c:url value="/resources/component/lightbox/css/lightbox.css"/>"
 	rel="stylesheet" type="text/css" />
-<script src="<c:url value="/resources/component/lightbox/js/lightbox.min.js"/>"
+<script
+	src="<c:url value="/resources/component/lightbox/js/lightbox.min.js"/>"
 	type="text/javascript"></script>
-<link href="<c:url value="/resources/css/search_Article.css"/>" rel="stylesheet" />
+<link href="<c:url value="/resources/css/search_Article.css"/>"
+	rel="stylesheet" />
 <script language="javascript" type="text/javascript">
 	function SearchProcess(event) {
 		if (event.keyCode == 13) {
@@ -119,7 +123,7 @@
 	href="<c:url value = "/resources/css/WebResource35b9.css"/>?d=QGz0EVx6KnXd0XFNz6_h8xNXGaTBbw0tdFlEudQ7cm-OthWnn6Dm_5tU0MRnaGIhZBbRg9S7WqTpHMZa1xNtEI0ab6Kl1IPnRi5TjbKoJFbytbX9TFl44EGYy--GyfelKV3DXQ2&amp;t=636040235083572431"
 	type="text/css" rel="stylesheet" class="Telerik_stylesheet" />
 
-	<link
+<link
 	href="<c:url value = "/resources/css/WebResourceb3b4.css"/>?d=x4growm4tE1xfqgq7CUmVsUnI-CbXa2N-c2_fNRwnEpvDP0BV-wXVIwtg-UArpbb2CDL-uqyWHg0pIMI2IqW_DG9HsBwwwsOkPeV5QgKyY9Yh5O4O982ECGyV1iNUPf_9TfsdN6N5kUDZgz-JeRM7Yx1qwU1&amp;t=636040235083572431"
 	type="text/css" rel="stylesheet" class="Telerik_stylesheet" />
 <link
@@ -166,7 +170,8 @@
 
 
 
-		<script src="<c:url value="/resources/js/Telerik.Web.UI.WebResource82d2.js"/>"
+		<script
+			src="<c:url value="/resources/js/Telerik.Web.UI.WebResource82d2.js"/>"
 			type="text/javascript"></script>
 		<script type="text/javascript">
 			//<![CDATA[
@@ -176,11 +181,14 @@
 			//]]>
 		</script>
 
-		<script src="<c:url value ="/resources/Services/PortletProxy.asmx/jsdebug.js"/>"
+		<script
+			src="<c:url value ="/resources/Services/PortletProxy.asmx/jsdebug.js"/>"
 			type="text/javascript"></script>
-		<script src="<c:url value = "/resources/Services/ModuleProxy.asmx/jsdebug.js"/>"
+		<script
+			src="<c:url value = "/resources/Services/ModuleProxy.asmx/jsdebug.js"/>"
 			type="text/javascript"></script>
-		<script src="<c:url value = "/resources/Services/CMS.asmx/jsdebug.js"/>"
+		<script
+			src="<c:url value = "/resources/Services/CMS.asmx/jsdebug.js"/>"
 			type="text/javascript"></script>
 		<script
 			src="<c:url value = "/resources/Services/WeatherService.asmx/jsdebug.js"/>"
@@ -274,7 +282,8 @@
 		<link
 			href="<c:url value = "/resources/Resources/ImagesPortal/PhongBan/main.css"/>"
 			rel="stylesheet" />
-		<link href="<c:url value = "/resources/css/mainPortlets.css"/>" rel="stylesheet" />
+		<link href="<c:url value = "/resources/css/mainPortlets.css"/>"
+			rel="stylesheet" />
 		<script language="javascript" type="text/javascript">
 			function SearchProcess(event) {
 				if (event.keyCode == 13) {
@@ -458,9 +467,8 @@
 													href="<c:url value="/keynotespeaker" />"
 													class="rmLink rmRootLink"><span class="rmText">Keynote
 															Speakers</span></a></li>
-												<li class="rmItem "><a
-													
-													class="rmLink rmRootLink"><span class="rmText">Program</span></a></li>
+												<li class="rmItem "><a class="rmLink rmRootLink"><span
+														class="rmText">Program</span></a></li>
 												<li class="rmItem "><a
 													href="<c:url value="/venuehotel"/>"
 													class="rmLink rmRootLink"><span class="rmText">Venue
@@ -468,10 +476,10 @@
 												<li class="rmItem rmLast"><a
 													href="<c:url value="/contact"/>" class="rmLink rmRootLink"><span
 														class="rmText">Contact</span></a></li>
-														<li class="rmItem rmLast"><a
+												<li class="rmItem rmLast"><a
 													href="<c:url value="/admin"/>" class="rmLink rmRootLink"><span
 														class="rmText">Edit</span></a></li>
-												
+
 											</ul>
 											<input
 												id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState"
@@ -499,27 +507,24 @@
 						</div></td>
 
 					</td>
-					
-					 <td>
-					 <div id="pnRight">
-<div id="pnRightDisplay" style="float:left; padding:0px 0px 0px 6px; width:300px">
-					 ${sidebar.content}
-					 </div>
-</div>
-<a href="<c:url value="/edit-webpage-${sidebar.page_id}"/>"
-							class="btn btn-primary ">EDIT 
-					
-							</a>
-					 </td>
-						
-						</tr>
-						
-						
-	
-				
-					
-						
-						
+
+					<td>
+						<div id="pnRight">
+							<!-- Comment -->
+							<div id="pnRightDisplay" style="float:left; padding:0px 0px 0px 6px; width:300px">
+							 ${slidebar.content}
+							 </div>
+						</div>
+					</td>
+
+				</tr>
+
+
+
+
+
+
+
 				<!-- end of header -->
 				<!-- body -->
 
